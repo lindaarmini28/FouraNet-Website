@@ -22,7 +22,7 @@ const pageTitles = {
   "/regis-switch": " Registrasi Switch",
   "/regis-alat": " Registrasi Alat",
   "/managementuser": " Manajemen User",
-  "/pengaturan": " Pengaturan",
+  "/setting": " Pengaturan",
 };
 
 function getItem(label, key, icon, children) {
@@ -45,7 +45,7 @@ const items = [
     getItem("Registrasi Alat", "/regis-alat"),
   ]),
   getItem("Manajemen User", "/managementuser", <TeamOutlined />),
-  getItem("Pengaturan", "/pengaturan", <SettingOutlined />),
+  getItem("Pengaturan", "/setting", <SettingOutlined />),
   getItem("Logout", "/login", <LogoutOutlined />),
 ];
 

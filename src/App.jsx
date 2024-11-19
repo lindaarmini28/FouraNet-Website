@@ -16,6 +16,7 @@ import RegistrasiSwitch from './pendaftaran/Switch';
 import RegistrasiAlat from './pendaftaran/alat';
 import Halaman1 from './Dashboard/Halaman1';
 import ManagementUser from './ManagementUser/ManagementUser';
+import SettingPage from './setting/setting';
 
 const App = () => {
     return (
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="/regis-switch" element={<PrivateRoute component={<RegistrasiSwitch />} />} />
             <Route path="/regis-alat" element={<PrivateRoute component={<RegistrasiAlat />} />} />
             <Route path="/managementuser" element={<PrivateRoute component={<ManagementUser />} />} />
+            <Route path="/setting" element={<PrivateRoute component={<SettingPage />} />} />
         </Routes>
     );
 };
