@@ -57,8 +57,6 @@ const RegistrasiServer = () => {
 
   return (
     <div style={{ padding: '20px', background: '#f0f2f5' }}>
-      <h2>Tempat</h2>
-
       {/* Input fields */}
       <div style={{ display: 'flex', marginBottom: '20px' }}>
         <Input
@@ -66,9 +64,9 @@ const RegistrasiServer = () => {
           style={{ width: '200px', marginRight: '10px' }}
         />
         <Select placeholder="Nama Perusahaan" style={{ width: '200px', marginRight: '10px' }}>
-          <Option value="yamaha">Rumah Putri</Option>
-          <Option value="suzuki">Hotel Sejahtera</Option>
-          <Option value="honda">LaoNet</Option>
+          <Option value="Rumah Putri">Rumah Putri</Option>
+          <Option value="Holet Sejahtera">Hotel Sejahtera</Option>
+          <Option value="LaoNet">LaoNet</Option>
         </Select>
         <Input placeholder="Lokasi Tambahan" style={{ width: '200px', marginRight: '10px' }}
         />

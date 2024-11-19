@@ -15,6 +15,7 @@ import RegistrasiRouter from './pendaftaran/router';
 import RegistrasiSwitch from './pendaftaran/Switch';
 import RegistrasiAlat from './pendaftaran/alat';
 import Halaman1 from './Dashboard/Halaman1';
+import ManagementUser from './ManagementUser/ManagementUser';
 
 const App = () => {
     return (
@@ -27,11 +28,12 @@ const App = () => {
             <Route path="/pendaftaran" element={<PrivateRoute component={<Pendaftaran/>} />} />
             <Route path="/pagependaftaran" element={<PagePendaftaran />} /> 
             <Route path="/regis-tempat" element={<PrivateRoute component={<RegistrasiTempat />} />} />
-            <Route path="/regis-server" element={<RegistrasiServer />} />
-            <Route path="/regis-panel" element={<RegistrasiPanel />} />
-            <Route path="/regis-router" element={<RegistrasiRouter />} />
-            <Route path="/regis-switch" element={<RegistrasiSwitch />} />
-            <Route path="/regis-alat" element={<RegistrasiAlat />} />
+            <Route path="/regis-server" element={<PrivateRoute component={<RegistrasiServer />} />} />
+            <Route path="/regis-panel" element={<PrivateRoute component={<RegistrasiPanel />} />}/>
+            <Route path="/regis-router" element={<PrivateRoute component={<RegistrasiRouter />} />}/>
+            <Route path="/regis-switch" element={<PrivateRoute component={<RegistrasiSwitch />} />} />
+            <Route path="/regis-alat" element={<PrivateRoute component={<RegistrasiAlat />} />} />
+            <Route path="/managementuser" element={<PrivateRoute component={<ManagementUser />} />} />
         </Routes>
     );
 };

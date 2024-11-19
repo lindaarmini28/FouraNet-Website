@@ -26,7 +26,7 @@ const RegistrasiRouter = () => {
       key: 'kodeRouter',
     },
     {
-      title: 'Kode Panel',
+      title: 'Panel',
       dataIndex: 'kodePanel',
       key: 'kodePanel',
     },
@@ -57,8 +57,6 @@ const RegistrasiRouter = () => {
 
   return (
     <div style={{ padding: '20px', background: '#f0f2f5' }}>
-      <h2>Tempat</h2>
-
       {/* Input fields */}
       <div style={{ display: 'flex', marginBottom: '20px' }}>
         <Input
@@ -66,10 +64,14 @@ const RegistrasiRouter = () => {
           style={{ width: '200px', marginRight: '10px' }}
         />
         <Select placeholder="Kode Panel" style={{ width: '200px', marginRight: '10px' }}>
-          <Option value="yamaha">PnN1</Option>
-          <Option value="suzuki">PnN2</Option>
-          <Option value="honda">PnSH1</Option>
+          <Option value="PnRP1">PnRP1</Option>
+          <Option value="PnHS1">PnHS1</Option>
+          <Option value="PnHS2">PnHS2</Option>
         </Select>
+        <Input
+          placeholder="Lokasi Tambahan"
+          style={{ width: '200px', marginRight: '10px' }}
+        />
         <Button type="primary">Save</Button>
       </div>
 

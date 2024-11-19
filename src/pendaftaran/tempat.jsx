@@ -52,8 +52,6 @@ const RegistrasiTempat = () => {
 
   return (
     <div style={{ padding: '20px', background: '#f0f2f5' }}>
-      <h2>Tempat</h2>
-
       {/* Input fields */}
       <div style={{ display: 'flex', marginBottom: '20px' }}>
         <Input

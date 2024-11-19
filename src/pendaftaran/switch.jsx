@@ -58,8 +58,6 @@ const RegistrasiSwitch = () => {
 
   return (
     <div style={{ padding: '20px', background: '#f0f2f5' }}>
-      <h2>Tempat</h2>
-
       {/* Input fields */}
       <div style={{ display: 'flex', marginBottom: '20px' }}>
         <Input
@@ -67,10 +65,14 @@ const RegistrasiSwitch = () => {
           style={{ width: '200px', marginRight: '10px' }}
         />
         <Select placeholder="Router" style={{ width: '200px', marginRight: '10px' }}>
-          <Option value="yamaha">Yamaha</Option>
-          <Option value="suzuki">Suzuki</Option>
-          <Option value="honda">Honda</Option>
+          <Option value="RRP1">RRP1</Option>
+          <Option value="RHS1">RHS1</Option>
+          <Option value="RHS2">RHS2</Option>
         </Select>
+        <Input
+          placeholder="Lokasi Tambahan"
+          style={{ width: '200px', marginRight: '10px' }}
+        />
         <Button type="primary">Save</Button>
       </div>
 

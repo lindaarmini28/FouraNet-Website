@@ -1,34 +1,40 @@
-// Tempat.js
 import React from 'react';
-import { Button, Input, Select, Table } from 'antd';
+import { Button, Input, Table } from 'antd';
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
-
-const { Option } = Select;
 
 const ManagementUser = () => {
   // Sample data for the table
   const dataSource = [
-    { key: '1', namaMotor: 'mio z', merk: 'yamaha' },
-    { key: '2', namaMotor: 'satria F', merk: 'suzuki' },
-    { key: '3', namaMotor: 'supra x 125', merk: 'honda' },
+    { key: '1', Number: '1', Roles: 'Admin', Username: 'nunikastari', Password: 'nunik123' },
+    { key: '2', Number: '2', Roles: 'Teknisi', Username: 'lindaarmini', Password: 'linda123' },
+    { key: '3', Number: '3', Roles: 'Teknisi', Username: 'putridwi', Password: 'putri123' },
+    { key: '4', Number: '4', Roles: 'Teknisi', Username: 'resthaaristita', Password: 'restha123' },
+    { key: '5', Number: '5', Roles: 'Teknisi', Username: 'rangga', Password: 'rangga123' },
+    { key: '6', Number: '6', Roles: 'Teknisi', Username: 'sindu', Password: 'sindu123' },
+    { key: '7', Number: '7', Roles: 'Teknisi', Username: 'agastya', Password: 'agastya123' },
   ];
 
   // Columns configuration for the table
   const columns = [
     {
-      title: 'No',
-      dataIndex: 'key',
-      key: 'key',
+      title: 'Number',
+      dataIndex: 'Number',
+      key: 'Number',
     },
     {
-      title: 'Nama Motor',
-      dataIndex: 'namaMotor',
-      key: 'namaMotor',
+      title: 'Roles',
+      dataIndex: 'Roles',
+      key: 'Roles',
     },
     {
-      title: 'Nama Merk',
-      dataIndex: 'merk',
-      key: 'merk',
+      title: 'Username',
+      dataIndex: 'Username',
+      key: 'Username',
+    },
+    {
+      title: 'Password',
+      dataIndex: 'Password',
+      key: 'Password',
     },
     {
       title: 'Actions',
@@ -52,19 +58,21 @@ const ManagementUser = () => {
 
   return (
     <div style={{ padding: '20px', background: '#f0f2f5' }}>
-      <h2>Tempat</h2>
-
       {/* Input fields */}
       <div style={{ display: 'flex', marginBottom: '20px' }}>
         <Input
-          placeholder="Nama Motor"
+          placeholder="Role"
           style={{ width: '200px', marginRight: '10px' }}
         />
-        <Select placeholder="Pilih Merk" style={{ width: '200px', marginRight: '10px' }}>
-          <Option value="yamaha">Yamaha</Option>
-          <Option value="suzuki">Suzuki</Option>
-          <Option value="honda">Honda</Option>
-        </Select>
+        <Input
+          placeholder="Username"
+          style={{ width: '200px', marginRight: '10px' }}
+        />
+        <Input
+          placeholder="Password"
+          style={{ width: '200px', marginRight: '10px' }}
+          type="password"
+        />
         <Button type="primary">Save</Button>
       </div>
 

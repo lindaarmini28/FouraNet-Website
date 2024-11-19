@@ -57,18 +57,16 @@ const RegistrasiPanel = () => {
 
   return (
     <div style={{ padding: '20px', background: '#f0f2f5' }}>
-      <h2>Tempat</h2>
-
-      {/* Input fields */}
+     {/* Input fields */}
       <div style={{ display: 'flex', marginBottom: '20px' }}>
         <Input
           placeholder="Panel"
           style={{ width: '200px', marginRight: '10px' }}
         />
         <Select placeholder="Server" style={{ width: '200px', marginRight: '10px' }}>
-          <Option value="yamaha">SvN1</Option>
-          <Option value="suzuki">SvHS1</Option>
-          <Option value="honda">SvHS2</Option>
+          <Option value="SvRP1">SvRP1</Option>
+          <Option value="SvHS1">SvHS1</Option>
+          <Option value="SvHS2">SvHS2</Option>
         </Select>
         <Input placeholder="Lokasi Tambahan" style={{ width: '200px', marginRight: '10px' }}
         />
