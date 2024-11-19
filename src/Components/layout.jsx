@@ -5,8 +5,9 @@ import {
   TeamOutlined,
   SettingOutlined,
   LogoutOutlined,
+  VideoCameraAddOutlined
 } from "@ant-design/icons";
-import { Breadcrumb, Layout, Menu, Typography } from "antd";
+import { Layout, Menu, Typography } from "antd";
 import { useNavigate, useLocation } from "react-router-dom"; // Tambahkan useLocation
 import logo from "../assets/logo-lengkap.png";
 
@@ -23,6 +24,7 @@ const pageTitles = {
   "/regis-alat": " Registrasi Alat",
   "/managementuser": " Manajemen User",
   "/setting": " Pengaturan",
+  
 };
 
 function getItem(label, key, icon, children) {
@@ -44,6 +46,7 @@ const items = [
     getItem("Registrasi Switch", "/regis-switch"),
     getItem("Registrasi Alat", "/regis-alat"),
   ]),
+  getItem("Video Panduan", "/video-panduan", <VideoCameraAddOutlined />),
   getItem("Manajemen User", "/managementuser", <TeamOutlined />),
   getItem("Pengaturan", "/setting", <SettingOutlined />),
   getItem("Logout", "/login", <LogoutOutlined />),

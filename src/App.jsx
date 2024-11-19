@@ -2,22 +2,22 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LoginPage from './Login/Login';
-import Dashboard from './Dashboard/Dashboard';
-import DetailPage from './Dashboard/DetailPage';
+import Dashboard from './Admin/Dashboard/Dashboard';
+import DetailPage from './Admin/Dashboard/DetailPage';
 import PrivateRoute from './PrivateRoute';
-import Pendaftaran from './pendaftaran/pendaftaran';
-import PagePendaftaran from './pendaftaran/pagependaftaran'; 
+import Pendaftaran from './Admin/pendaftaran/pendaftaran';
+import PagePendaftaran from './Admin/pendaftaran/pagependaftaran'; 
 import './App.css'; 
-import RegistrasiTempat from './pendaftaran/tempat';
-import RegistrasiServer from './pendaftaran/server';
-import RegistrasiPanel from './pendaftaran/panel';
-import RegistrasiRouter from './pendaftaran/router';
-import RegistrasiSwitch from './pendaftaran/Switch';
-import RegistrasiAlat from './pendaftaran/alat';
-import Halaman1 from './Dashboard/Halaman1';
-import ManagementUser from './ManagementUser/ManagementUser';
-import SettingPage from './setting/setting';
-import DashboardTeknisi from './dashboard_teknisi/dash_teknisi';
+import RegistrasiTempat from './Admin/pendaftaran/tempat';
+import RegistrasiServer from './Admin/pendaftaran/server';
+import RegistrasiPanel from './Admin/pendaftaran/panel';
+import RegistrasiRouter from './Admin/pendaftaran/router';
+import RegistrasiSwitch from './Admin/pendaftaran/Switch';
+import RegistrasiAlat from './Admin/pendaftaran/alat';
+import Halaman1 from './Admin/Dashboard/Halaman1';
+import ManagementUser from './Admin/ManagementUser/ManagementUser';
+import SettingPage from './Admin/setting/setting';
+import DashboardTeknisi from './Teknisi/Dashboard_teknisi/dash_teknisi';
 
 const App = () => {
     return (
