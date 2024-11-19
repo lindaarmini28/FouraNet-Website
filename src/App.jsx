@@ -17,11 +17,13 @@ import RegistrasiAlat from './pendaftaran/alat';
 import Halaman1 from './Dashboard/Halaman1';
 import ManagementUser from './ManagementUser/ManagementUser';
 import SettingPage from './setting/setting';
+import DashboardTeknisi from './dashboard_teknisi/dash_teknisi';
 
 const App = () => {
     return (
         <Routes>
-            <Route path="/" element={<LoginPage />} />
+            <Route path="/" element={<DashboardTeknisi />} />
+            {/* <Route path="/" element={<LoginPage />} /> */}
             <Route path="/login" element={<LoginPage />} />
             <Route path="/dashboard" element={<PrivateRoute component={<Dashboard />} />} />
             <Route path="/Halaman1" element={<PrivateRoute component={<Halaman1 />} />} />

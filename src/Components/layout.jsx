@@ -86,7 +86,7 @@ const MainLayout = ({ children }) => {
           />
           {!collapsed && (
             <Typography.Text style={{ color: "#031779", fontWeight: "bold" }}>
-              FauraNet
+              FouraNet
             </Typography.Text>
           )}
         </div>

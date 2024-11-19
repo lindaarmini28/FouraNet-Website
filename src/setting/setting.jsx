@@ -15,8 +15,6 @@ const SettingPage = () => {
 
   return (
     <div style={{ padding: '20px', background: darkMode ? '#333' : '#f0f2f5', color: darkMode ? '#fff' : '#000' }}>
-      <h2>Settings</h2>
-
       {/* Pengaturan Tema */}
       <Card title="Theme" style={{ marginBottom: '20px' }}>
         <Switch
