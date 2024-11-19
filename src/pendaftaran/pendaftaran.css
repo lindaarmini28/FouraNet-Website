@@ -1,0 +1,24 @@
+/* src/Pendaftaran/Pendaftaran.css */
+
+.pendaftaran-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.pendaftaran-form .ant-form-item-label > label {
+    font-weight: 600;
+}
+
+.pendaftaran-button {
+    width: 100%;
+    background-color: #4CAF50; /* Warna hijau */
+    border: none;
+}
+
+.pendaftaran-button:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+}

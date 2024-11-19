@@ -1,0 +1,32 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Menjaga logo tetap sejajar dengan form */
+  height: 100%; /* Menyesuaikan tinggi kolom */
+}
+/* Gaya tombol utama */
+.ant-btn-primary {
+  background-color: #ffb81d;
+  border-color: #ffb81d;
+  color: #031779; /* Menambahkan warna teks */
+}
+
+/* Mengatur efek hover pada tombol */
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+  background-color: #ffb81d !important ;/* Tetap dengan warna latar belakang #ffb81d */
+  border-color: #ffb81d !important; /* Tetap dengan warna border #ffb81d */
+  color: #031779; /* Menjaga warna teks tetap #031779 */
+}
+
+/* Mengatur efek disabled pada tombol */
+.ant-btn-primary[disabled] {
+  background-color:  #e2dfdf !important; /* Tetap dengan warna latar belakang #ffb81d meskipun tombol dinonaktifkan */
+  border-color: #e2dfdf !important;
+  color: #b0b0b0 !important; /* Menjaga warna teks saat tombol dinonaktifkan */
+}
+
+.header-brand {
+  font-size: 29px;
+  font-weight: bold;
+  color: #031779;
+}

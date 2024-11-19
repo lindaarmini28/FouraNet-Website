@@ -1,0 +1,20 @@
+/* src/PagePendaftaran/PagePendaftaran.css */
+
+.page-pendaftaran-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container {
+    margin-top: 20px;
+}
+
+.card {
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efek hover untuk memperbesar card */
+}
