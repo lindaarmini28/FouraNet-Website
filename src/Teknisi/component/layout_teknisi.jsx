@@ -14,7 +14,9 @@ const { Header, Content, Footer, Sider } = Layout;
 // Mapping path ke judul halaman
 const pageTitles = {
   "/maintenance": "Maintenance",
-
+  "/maintenance1" : "Manintenance",
+  "/detailmaintenance" : "Detail Maintenance",
+  "/video-panduan-teknisi" : "Tampilan Video",
   "/settingteknisi": " Pengaturan",
   
 };
@@ -30,7 +32,7 @@ function getItem(label, key, icon, children) {
 
 const items = [
   getItem("Maintenance", "/maintenance", <ToolOutlined />),
-  getItem("Video Panduan", "/video-panduan", <VideoCameraAddOutlined />),
+  getItem("Video Panduan Maintenance", "/video-panduan-teknisi", <VideoCameraAddOutlined />),
   getItem("Pengaturan", "/settingteknisi", <SettingOutlined />),
   getItem("Logout", "/login", <LogoutOutlined />),
 ];

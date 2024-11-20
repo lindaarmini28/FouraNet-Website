@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Typography, Table, Card } from "antd";
-import cctv from "../../assets/cctv.png";
+import cctv from "../../assets/cctv.jpg";
 
 const { Title } = Typography;
 

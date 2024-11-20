@@ -14,7 +14,7 @@ const LoginPage = () => {
 
   const handleLogin = () => {
     console.log(username, password);
-    navigate("/halaman1", { replace: true });
+    navigate("/maintenance", { replace: true });
   };
 
   return (

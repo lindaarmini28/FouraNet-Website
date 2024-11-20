@@ -10,6 +10,7 @@ import {
 import { Layout, Menu, Typography } from "antd";
 import { useNavigate, useLocation } from "react-router-dom"; // Tambahkan useLocation
 import logo from "../assets/logo-lengkap.png";
+import './layout.css';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -23,6 +24,7 @@ const pageTitles = {
   "/regis-switch": " Registrasi Switch",
   "/regis-alat": " Registrasi Alat",
   "/managementuser": " Manajemen User",
+  "/video-panduan": " Video Panduan",
   "/setting": " Pengaturan",
   
 };

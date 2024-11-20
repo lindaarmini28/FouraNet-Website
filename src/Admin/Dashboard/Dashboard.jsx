@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { Card, Input, Row, Col, Typography } from "antd";
 import { SearchOutlined, HomeOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
-import telepon from "../../assets/telepon.png";
+import telepon from "../../assets/telepon.jpg";
 import wifi from "../../assets/wifi.jpg";
-import cctv from "../../assets/cctv.png";
+import cctv from "../../assets/cctv.jpg";
 
 import "./Dashboard.css";
 

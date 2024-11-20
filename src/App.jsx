@@ -24,6 +24,7 @@ import PrivateRouteTeknisi from './PrivateRouteTeknisi';
 import DetailMaintenance from './Teknisi/maintenance/detailmaintenance';
 import SettingPageTeknisi from './Teknisi/settingteknisi/settingteknisi';
 import VideoPanduanTeknisi from './Admin/PanduanTeknisi/PanduanTeknisi';
+import VideoPanduanTeknisi2 from './Teknisi/VideoPanduanTeknisi/VideoPanduanTeknisi-Teknisi';
 
 const App = () => {
     return (
@@ -48,6 +49,7 @@ const App = () => {
 
             <Route path="/maintenance" element={<PrivateRouteTeknisi component={<Maintenance />} />} />
             <Route path="/maintenance1" element={<PrivateRouteTeknisi component={<Maintenance1 />} />} />
+            <Route path="/video-panduan-teknisi" element={<PrivateRouteTeknisi component={<VideoPanduanTeknisi2 />} />} />
             <Route path="/detailmaintenance/:id" element={<PrivateRouteTeknisi component={<DetailMaintenance  />} />} />
             <Route path="/settingteknisi" element={<PrivateRouteTeknisi component={<SettingPageTeknisi  />} />} />
         </Routes>
