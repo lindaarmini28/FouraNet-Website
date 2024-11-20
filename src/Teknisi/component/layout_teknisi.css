@@ -1,0 +1,16 @@
+/* Warna background untuk menu yang terpilih */
+.ant-menu-light .ant-menu-item-selected {
+    background-color: #031779 !important; /* Background kuning */
+    color: #ffffff !important; /* Teks putih untuk kontras */
+  }
+  
+  /* Warna ikon untuk item yang terpilih */
+  .ant-menu-light .ant-menu-item-selected .ant-menu-item-icon {
+    color: #ffffff !important;
+  }
+  
+  /* Warna teks menu saat hover */
+  .ant-menu-light .ant-menu-item:hover {
+    background-color: #031779 !important; /* Sama seperti warna menu terpilih */
+    color: #ffffff !important;
+  }

@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { Button, Input, Upload, message, Table } from 'antd';
+import { Button, Input, Upload, message, Table } from "antd";
 import {
   EditOutlined,
   DeleteOutlined,
   UploadOutlined,
 } from "@ant-design/icons";
-import cctv from "../../assets/cctv.png";
+import hotel from "../../assets/hotel.jpg";
+import perusahaan from "../../assets/perusahaan.jpg";
+import rumah from "../../assets/rumah.jpg";
+
 
 const RegistrasiTempat = () => {
   const [dataSource, setDataSource] = useState([
@@ -13,19 +16,19 @@ const RegistrasiTempat = () => {
       key: "1",
       namaperusahaan: "Rumah Putri",
       alamat: "Jl. Kerobokan, Singaraja",
-      image: cctv,
+      image: rumah,
     },
     {
       key: "2",
       namaperusahaan: "Hotel Sejahtera",
       alamat: "Jl. Manggis, Tejakula",
-      image: cctv,
+      image: hotel,
     },
     {
       key: "3",
       namaperusahaan: "LaoNet",
       alamat: "Jl. Banyuasri, Singaraja",
-      image: cctv,
+      image: perusahaan,
     },
   ]);
   const [image, setImage] = useState(null);

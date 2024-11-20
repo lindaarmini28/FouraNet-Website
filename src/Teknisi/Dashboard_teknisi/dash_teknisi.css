@@ -1,72 +1,29 @@
 .dashboard {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Sesuaikan dengan layar penuh */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Agar elemen mulai dari atas */
-    color: #fff; /* Warna teks putih agar kontras */
-  }
-  
-  .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.6); /* Navbar semi-transparan */
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navbar .nav-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-  }
-  
-  .navbar .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .navbar .sign-in {
-    padding: 0.5rem 1rem;
-    background-color: orange;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .content {
-    position: absolute;
-    top: 20%; /* Ubah posisi vertikal ke atas */
-    text-align: center;
-  }
-  
-  .content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .content p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .learn-more {
-    padding: 0.7rem 1.5rem;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  padding: 0 20px; /* Responsif untuk layar kecil */
+}
+
+.learn-more {
+  background-color: #007BFF; /* Warna biru untuk tombol */
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.learn-more:hover {
+  transform: scale(1.1); /* Animasi pembesaran tombol saat hover */
+}
