@@ -30,7 +30,7 @@ function getItem(label, key, icon, children) {
 
 const items = [
   getItem("Maintenance", "/maintenance", <ToolOutlined />),
-  getItem("Video Panduan", "/video-panduan", <VideoCameraAddOutlined />),
+  getItem("Video Panduan", "/video-panduan-teknisi", <VideoCameraAddOutlined />),
   getItem("Pengaturan", "/settingteknisi", <SettingOutlined />),
   getItem("Logout", "/login", <LogoutOutlined />),
 ];
