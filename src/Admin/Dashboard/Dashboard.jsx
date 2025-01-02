@@ -16,7 +16,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   const data = [
-    { id: 1, title: "WifiRP1 ", image: wifi },
+    { id: 1, title: "WifiRP1", image: wifi },
     { id: 2, title: "TeleponHS1", image: telepon },
     { id: 3, title: "CctvHS1", image: cctv },
   ];
@@ -26,12 +26,12 @@ const Dashboard = () => {
   );
 
   const handleCardClick = (card) => {
-    navigate(`/detail/${card.id}`); // Make sure the URL string is wrapped in backticks
+    navigate(`/detail/${card.id}`);
   };
 
   return (
     <div className="dashboard-container">
-      <h1>Dashboard</h1>
+      <Title level={2}>Dashboard</Title>
       <Input
         placeholder="Search..."
         value={searchTerm}
@@ -39,13 +39,28 @@ const Dashboard = () => {
         className="search-input"
         prefix={<SearchOutlined />}
       />
-      <Row gutter={[5, 5]} className="card-container">
+      <Row gutter={[16, 16]} className="card-container">
         {filteredData.map((card) => (
-          <Col span={4} key={card.id}>
+          <Col xs={24} sm={12} md={8} lg={6} xl={4} key={card.id}>
             <Card
               hoverable
-              cover={<img alt={card.title} src={card.image} />}
+              cover={
+                <img
+                  alt={card.title}
+                  src={card.image}
+                  style={{
+                    height: "150px",
+                    objectFit: "cover",
+                  }}
+                />
+              }
               onClick={() => handleCardClick(card)}
+              style={{
+                height: "250px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
             >
               <Card.Meta
                 title={

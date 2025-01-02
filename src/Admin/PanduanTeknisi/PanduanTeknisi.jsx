@@ -154,7 +154,7 @@ const VideoPanduanTeknisi = () => {
                 title={play.play_name}
                 description={
                   <>
-                    {/* <p><strong>Jenis:</strong> {play.play_genre}</p> */}
+                    <p><strong>Jenis:{play.play_genre}</strong></p>
                     <p>{play.play_description}</p>
                   </>
                 }
@@ -183,17 +183,17 @@ const VideoPanduanTeknisi = () => {
           >
             <Input />
           </Form.Item>
-          {/* <Form.Item
+          <Form.Item
             name="play_genre"
             label="Jenis Video"
             rules={[{ required: true, message: 'Please select the genre!' }]}
           >
             <Select placeholder="Select a genre">
-              <Select.Option value="tips">Tips</Select.Option>
-              <Select.Option value="panduan">Panduan</Select.Option>
+              <Select.Option value="Tips">Tips</Select.Option>
+              <Select.Option value="Panduan">Panduan</Select.Option>
               <Select.Option value="Berita">Berita</Select.Option>
             </Select>
-          </Form.Item> */}
+          </Form.Item>
           <Form.Item
             name="play_url"
             label="Url Video"

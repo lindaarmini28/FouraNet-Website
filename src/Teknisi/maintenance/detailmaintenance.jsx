@@ -55,21 +55,6 @@ const DetailMaintenance = () => {
     { title: "Maintenance", dataIndex: "maintenance", key: "maintenance" },
     { title: "Status", dataIndex: "status", key: "status" },
     {
-      title: "Add",
-      key: "add",
-      render: (_, record) => (
-        <Space>
-          <span>Add</span>
-          <Button
-            type="primary"
-            icon={<PlusOutlined />}
-            size="small"
-            onClick={() => alert(`Add action clicked for record ${record.no}`)}
-          />
-        </Space>
-      ),
-    },
-    {
       title: "Actions",
       key: "actions",
       render: (_, record) => (
@@ -143,6 +128,18 @@ const DetailMaintenance = () => {
 
       {/* Maintenance Records */}
       <Title level={4}>Maintenance Records</Title>
+      
+      {/* Add Button Above the Table */}
+      <div style={{ marginBottom: "10px", textAlign: "right" }}>
+        <Button
+          type="primary"
+          icon={<PlusOutlined />}
+          onClick={() => alert("Add new maintenance record")}
+        >
+          Add
+        </Button>
+      </div>
+
       <Table
         dataSource={card.maintenanceRecords}
         columns={columns}
